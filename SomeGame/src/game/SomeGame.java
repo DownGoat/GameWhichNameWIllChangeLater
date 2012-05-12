@@ -3,13 +3,14 @@ package game;
 import org.newdawn.slick.GameContainer;
 import org.newdawn.slick.SlickException;
 import org.newdawn.slick.state.StateBasedGame;
+import game.states.*;
 
 /**
  * 
  * @author Stefan
  *
  */
-public class SomeGame {
+public class SomeGame extends StateBasedGame {
 	public static final int MAINMENUSTATE = 0;
 	public static final int GAMEPLAYSTATE = 1;
 	public static final int SETTINGSSTATE = 2;
@@ -20,8 +21,8 @@ public class SomeGame {
 	public static int frameHeight;
 
 	public SomeGame(String name, int frameWidth, int frameHeight) {
-		/*super(name);
-
+		super(name);
+		/*
 		this.addState(new MainMenuState(MAINMENUSTATE));
 		this.addState(new GamePlayState(GAMEPLAYSTATE));
 		this.addState(new SettingsState(SETTINGSSTATE));
@@ -35,13 +36,11 @@ public class SomeGame {
 	}
 
 	@Override
-	/*public void initStatesList(GameContainer gc) throws SlickException {
-		this.getState(MAINMENUSTATE).init(gc, this);
+	public void initStatesList(GameContainer gc) throws SlickException {
+		/*this.getState(MAINMENUSTATE).init(gc, this);
 		this.getState(GAMEPLAYSTATE).init(gc, this);
 		this.getState(SETTINGSSTATE).init(gc, this);
 		this.getState(PAUSESTATE).init(gc, this);
-		this.getState(GAMEOVERSTATE).init(gc, this);
-	}*/
-}
-
+		this.getState(GAMEOVERSTATE).init(gc, this);*/
+	}
 }
